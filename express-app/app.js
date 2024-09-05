@@ -6,7 +6,7 @@ const app = express();
 
 //set vies engine and folder
 app.set('view engine', 'ejs');
-app.set('vies', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views'));
 
 //middleware for static files and for form data
 app.use(express.static(path.join(__dirname, 'public')));
